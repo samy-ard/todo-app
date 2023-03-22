@@ -80,6 +80,7 @@ a {
 	padding: 3em 0.5em 2.625em;
 	background-repeat: no-repeat;
 	background-blend-mode: overlay;
+	background-size: cover;
 	background-image: linear-gradient(to right, var(--mauve), var(--blue)), url('./images/bg-mobile-light.jpg');
 }
 
