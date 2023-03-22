@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="row row-edges">
+        <div class="col-auto">
+          <a href="#" class="site-brand" title="TODO App">Todo</a>
+        </div>
+        <div class="col-auto">
+          <a href="#" class="site-mode" title="Switch Mode">
+            <span class="mode-icon icon icon-moon"></span>
+          </a>
+        </div>
+        <div class="col-12">
+          <div class="site-form">
+            <div class="input-group">
+              <input type="text" class="form-field" placeholder="Create a new todo...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="site-main">
+    <div class="container">
+      <section class="todo">
+        <div class="todo-wrapper">
+          <ul class="todo-list sortable">
+            <li class="todo-list-item completed">
+              <span class="todo-list-item--label">Complete online JavaScript course</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+            <li class="todo-list-item">
+              <span class="todo-list-item--label">Jog around the park 3x</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+            <li class="todo-list-item">
+              <span class="todo-list-item--label">10 minutes meditation</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+            <li class="todo-list-item">
+              <span class="todo-list-item--label">Read for 1 hour</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+            <li class="todo-list-item">
+              <span class="todo-list-item--label">Pick up groceries</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+            <li class="todo-list-item">
+              <span class="todo-list-item--label">Complete Todo App on Frontend Mentor</span>
+              <img src="./images/icon-cross.svg" alt="Delete" class="todo-list-item--remove">
+            </li>
+          </ul>
+          <div class="todo-footer">
+            <div class="todo-list-total">
+              <span id="total"></span> items left
+            </div>
+            <div class="todo-list-clear">
+              <button type="button" class="btn-clear-list" title="Clear Completed">Clear Completed</button>
+            </div>
+            <ul class="todo-list-filters">
+              <li class="todo-list-filter-item active">
+                <a href="#" class="todo-list-filter-link" data-filter="0" title="All">All</a>
+              </li>
+              <li class="todo-list-filter-item">
+                <a href="#" class="todo-list-filter-link" data-filter="1" title="Active">Active</a>
+              </li>
+              <li class="todo-list-filter-item">
+                <a href="#" class="todo-list-filter-link" data-filter="2" title="Completed">Completed</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="todo-list-filters">
+            <li class="todo-list-filter-item active">
+              <a href="#" class="todo-list-filter-link" data-filter="0" title="All">All</a>
+            </li>
+            <li class="todo-list-filter-item">
+              <a href="#" class="todo-list-filter-link" data-filter="1" title="Active">Active</a>
+            </li>
+            <li class="todo-list-filter-item">
+              <a href="#" class="todo-list-filter-link" data-filter="2" title="Completed">Completed</a>
+            </li>
+          </ul>
+        </div>
+        <p class="todo-list-desc">Drag and drop to reorder list</p>
+      </section>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
